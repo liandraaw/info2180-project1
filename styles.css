@@ -11,6 +11,8 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+/*Styling the header*/
 header {
     background-color: white;
     font: 18px;
@@ -21,44 +23,93 @@ h1 {
 ul{
     float: right;
     list-style: none;
-
+    padding:5px
+}
+li:hover{
+    color: #5A67D8
 }
 li{
     display:inline;
     color: #6b7280;  
     list-style-type: none;
 }
-li:hover{
-    color: #5A67D8
-}
 
 
+/*Styling the hero overview*/
 .overview-hero{
     background-color: #e2e8f0;
     color: black ;
-    clear:both;
-   
+    clear:both;    
 }
 
 .overview-hero-image{
-    margin: 10px,10px;
-    padding: 10px,20px,;
-   
+    float:left;
+    margin: 20px;
+    padding: 20px;
 }
 .overview-hero-text{
-    padding: 10px,10px;
-    margin:10px,10px;
+    padding: 30px;
+    margin:30px;
     white-space: normal;
 }
 
+/*Styling the learn about section*/
 .learn-about{
     clear:both;
 }
- h2{
+ .learn-about h2{
+    margin:20px;
     color: #48bb78;
 }
-h3{
+.learn-about h3{
     color: #48bb78;
+    font-size: 21px;
 }
 
+.cards{
+    
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+.card{
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius:5px;
+    padding: 15px;
+    width: 250px;
+    height:425px
+}
+.testing{
+    background-color: #4A5568;
+    color:white;
+    margin: 50px;
+    padding: 50px;  
+    height:auto;    
+}
+.cta a{
+    float:right;
+    background-color: #48BB78;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+}
 
+.stories {
+    clear:both; 
+}
+.stories img{
+    float:left;
+    border-radius: 500px;
+
+}
+.stories.article-body{
+    float:right;
+    padding:10px;
+    margin:20px;
+}
+.newsletter{
+    clear:both;
+}
