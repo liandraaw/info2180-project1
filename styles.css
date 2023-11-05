@@ -66,6 +66,7 @@ li{
     font-size: 21px;
 }
 
+/* Styling of the cards*/
 .cards{
     
     display: grid;
@@ -82,6 +83,8 @@ li{
     width: 250px;
     height:425px
 }
+
+/*Styling the covid-19 section*/
 .testing{
     background-color: #4A5568;
     color:white;
@@ -97,19 +100,38 @@ li{
     color:white;
 }
 
+/*Styling stories part*/
 .stories {
-    clear:both; 
+    clear:both;
 }
 .stories img{
-    float:left;
-    border-radius: 500px;
+    float: left;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    margin-bottom:20px;
+}
+.stories h2 {
+    color:#5A67D8;
+}
+.article-body p>a {
+   color:#5A67D8;
+}
 
-}
-.stories.article-body{
-    float:right;
-    padding:10px;
-    margin:20px;
-}
+/*Styling newsletter*/
 .newsletter{
     clear:both;
+    display: grid;
+   justify-content: center;
+    background-color: #48BB78;
+    color:white;
+}
+button{
+    background-color: #5A67D8;
+}
+
+
+/*Styling the footer*/
+footer{
+    background-color: #4A5568;
+    color:white;
 }
