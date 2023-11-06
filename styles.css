@@ -20,34 +20,38 @@ header {
 h1 {
     float:left;
 }
-ul{
-    float: right;
+nav ul{
+    text-decoration: none;
     list-style: none;
-    padding:5px
-}
-li:hover{
-    color: #5A67D8
-}
-li{
-    display:inline;
-    color: #6b7280;  
-    list-style-type: none;
+    float: right;
+    display:flex;
+    flex-direction: row;
 }
 
+nav   a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6b7280;  
+}
+a:hover{
+    color: #5A67D8
+}
 
 /*Styling the hero overview*/
 .overview-hero{
     background-color: #e2e8f0;
     color: black ;
-    clear:both;    
+    clear:both;   
+    justify-content: center; 
 }
 
 .overview-hero-image{
     float:left;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .overview-hero-text{
+    width:80%;
     padding: 30px;
     margin:30px;
     white-space: normal;
@@ -88,45 +92,67 @@ li{
 .testing{
     background-color: #4A5568;
     color:white;
-    margin: 50px;
     padding: 50px;  
-    height:auto;    
+    margin: 0;
+    height:150px;
+         
 }
-.cta a{
+.testing-desciption{
+    width:80%;
+    float:left;
+}
+.cta a {
     float:right;
+    text-decoration: none;
     background-color: #48BB78;
     border-radius: 5px;
-    padding: 10px;
+    padding:10px;
+    margin-top: 50px;
     color:white;
 }
 
 /*Styling stories part*/
 .stories {
     clear:both;
+    margin:0;
+}
+.article-body{
+    margin: 50px;
+    padding:5px;
 }
 .stories img{
     float: left;
-    border-radius: 5px;
-    padding-bottom: 30px;
-    margin-bottom:20px;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin-right: 20px;
+    
+       
 }
 .stories h2 {
     color:#5A67D8;
 }
-.article-body p>a {
+.article-body a {
    color:#5A67D8;
 }
 
 /*Styling newsletter*/
 .newsletter{
     clear:both;
-    display: grid;
-   justify-content: center;
+    text-align:center;
     background-color: #48BB78;
+    padding:20px;
     color:white;
+}
+.newsletter form{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 button{
     background-color: #5A67D8;
+    margin-left: 20px;
 }
 
 
