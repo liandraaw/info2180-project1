@@ -1,6 +1,7 @@
 /* Add your JavaScript to this file */
-const links = document.getElementsByTagName("a");
-    //console.log(links);  
+
+document.addEventListener("DOMContentLoaded",function(){
+    const links = document.getElementsByTagName("a");
     function hovlink(){
         links.forEach(link =>{
             link.addEventListener('mouseover',()=>{
@@ -13,25 +14,31 @@ const links = document.getElementsByTagName("a");
             });
         });
     }
-//document.addEventListener("DOMContentLoaded",function(){
+
     const bttn= document.getElementsByClassName(".btn");
 
+        bttn.addEventListener("click", function(event){
+            event.preventDefault();
+            validateEmail();
+        });
+
+
+    function validateEmail(){
+            const email= document.getElementById("email").value;
+            const emessage = document.getElementsByClassName("message");
+            const regx =/^([a-zA-Z0-9\._-]+)@([a-zA-Z])+.([a-z]+)?$/;
+
+            if (regx.test(email)){
+                emessage.textContent = "Please enter a valid email address";
+                alert(emessage);
+
+            }else{
+                emessage.textContent = "Thank you! Your email address  has been to our mailing list!";
+                alert(emessage);
+            }
+            
+
+        };
+}
     
-    bttn.addEventListener("submit", function(event){
-        event.preventDefault();
-
-        const email= document.getElementById("email").value;
-        const emessage = document.getElementsByClassName(".message");
-        const regx =/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)?$/
-
-        if (!email.test(regx)){
-            emessage.textContent="Please enter a valid email address";
-
-        }else{
-            emessage.textContent="Thank you! Your email address ",$emailField.value,"has been to our mailing list!"
-        }
-        return emessage;
-
-    });
-    
-//});
+);
